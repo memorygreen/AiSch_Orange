@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme version="2.0" title="" description="">
+	<nodes>
+		<node id="0" name="Create Corpus" qualified_name="orangecontrib.text.widgets.owcreatecorpus.OWCreateCorpus" project_name="Orange3-Text" version="" title="Create Corpus" position="(150, 150)" />
+		<node id="1" name="Corpus Viewer" qualified_name="orangecontrib.text.widgets.owcorpusviewer.OWCorpusViewer" project_name="Orange3-Text" version="" title="Corpus Viewer" position="(311.0, 145.0)" />
+		<node id="2" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud" position="(466.0, 179.0)" />
+		<node id="3" name="Preprocess Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" project_name="Orange3-Text" version="" title="Preprocess Text" position="(309.0, 429.0)" />
+		<node id="4" name="Word Cloud" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" project_name="Orange3-Text" version="" title="Word Cloud (1)" position="(474.0, 463.0)" />
+		<node id="5" name="Sentiment Analysis" qualified_name="orangecontrib.text.widgets.owsentimentanalysis.OWSentimentAnalysis" project_name="Orange3-Text" version="" title="Sentiment Analysis" position="(488.0, 621.0)" />
+		<node id="6" name="Data Table" qualified_name="Orange.widgets.data.owtable.OWTable" project_name="Orange3" version="" title="Data Table" position="(649.0, 619.0)" />
+	</nodes>
+	<links>
+		<link id="0" source_node_id="0" sink_node_id="1" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="1" source_node_id="1" sink_node_id="2" source_channel="Matching Docs" sink_channel="Corpus" enabled="true" source_channel_id="matching_docs" sink_channel_id="corpus" />
+		<link id="2" source_node_id="0" sink_node_id="3" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="3" source_node_id="3" sink_node_id="4" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="4" source_node_id="3" sink_node_id="5" source_channel="Corpus" sink_channel="Corpus" enabled="true" source_channel_id="corpus" sink_channel_id="corpus" />
+		<link id="5" source_node_id="5" sink_node_id="6" source_channel="Corpus" sink_channel="Data" enabled="true" source_channel_id="corpus" sink_channel_id="data" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties node_id="0" format="literal">{'auto_commit': True, 'controlAreaVisible': True, 'language': 'Korean', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xad\x00\x00\x00\x84\x00\x00\x05\x06\x00\x00\x02\xe2\x00\x00\x02\xae\x00\x00\x00\xa2\x00\x00\x05\x05\x00\x00\x02\xe1\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xae\x00\x00\x00\xa2\x00\x00\x05\x05\x00\x00\x02\xe1', 'texts': [('1', '겨울왕국 너무 유치해서 별로임!!!!!!'), ('2', '엘사가 너무 예뻐서 또 보고 싶음'), ('3', '올해 본 영화중에서 제일 돈 아까웠음'), ('4', '안나가 빌런 아니냐 보는 내내 답답했음'), ('5', 'ost가 너무 좋았어요~~렛잇고 매일 듣는 중~~~'), ('6', '믿고 보는 디즈니~~ 역시 디즈니 시리즈는 너무 재미있어요'), ('7', '2시간이 지루하지 않았어요 영상미가 좋아요'), ('8', '겨울만 되면 생각이 날 것 같아요 또 보고 싶어요'), ('9', '처음부터 끝까지 노래만 부르다가 끝난듯;;; 지루했음'), ('10', '다 봤는데 무슨 내용인지 모르겠음 스토리 누가썼냐'), ('11', '내인생 최악의 영화 우우우우우 노잼노잼 절대안봐 !!!!!!!!!!'), ('12', '너무너무 재미있었어요~다시보고싶은 최고의 영화~~~')], '__version__': 1}</properties>
+		<properties node_id="1" format="pickle">gASVsAEAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAARgAAABeAAAE6AAAArwAAAEZAAAAfAAABOcAAAK7
+AAAAAAAAAAAGAAAAARkAAAB8AAAE5wAAAruUjBJzZWxlY3RlZF9kb2N1bWVudHOUj5QoSwCQjAtz
+aG93X3Rva2Vuc5SJjAtfX3ZlcnNpb25fX5RLAowQY29udGV4dF9zZXR0aW5nc5RdlIwVb3Jhbmdl
+d2lkZ2V0LnNldHRpbmdzlIwHQ29udGV4dJSTlCmBlH2UKIwGdmFsdWVzlH2UKIwQZGlzcGxheV9m
+ZWF0dXJlc5RdlCiMBVRpdGxllEtnhpSMCERvY3VtZW50lEtnhpRlSv3///+GlIwNcmVnZXhwX2Zp
+bHRlcpSMAJRK/v///4aUjA9zZWFyY2hfZmVhdHVyZXOUXZQoaBRLZ4aUaBZLZ4aUZUr9////hpRo
+CEsCdYwKYXR0cmlidXRlc5R9lIwFbWV0YXOUfZQoaBRLA2gWSwN1dWJhdS4=
+</properties>
+		<properties node_id="2" format="pickle">gASVwgAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAE9AAAAhAAABMIAAAKWAAABPgAAAKIAAATBAAAClQAAAAAAAAAABgAAAAE+
+AAAAogAABMEAAAKVlIwOc2VsZWN0ZWRfd29yZHOUj5QojAbrs7Tqs6CUkIwLd29yZHNfY29sb3KU
+iIwKd29yZHNfdGlsdJRLAIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="3" format="pickle">gASVFQMAAAAAAAB9lCiMCmF1dG9jb21taXSUiIwSY29udHJvbEFyZWFWaXNpYmxllIiME3NhdmVk
+V2lkZ2V0R2VvbWV0cnmUQ0IB2dDLAAMAAAAAAcEAAACcAAAFDAAAAq4AAAHCAAAAugAABQsAAAKt
+AAAAAAAAAAAGAAAAAcIAAAC6AAAFCwAAAq2UjA5zdG9yZWRzZXR0aW5nc5R9lCiMBG5hbWWUjACU
+jA1wcmVwcm9jZXNzb3JzlF2UKIwUcHJlcHJvY2Vzcy50cmFuc2Zvcm2UfZSGlIwTcHJlcHJvY2Vz
+cy50b2tlbml6ZZR9lIaUjBFwcmVwcm9jZXNzLmZpbHRlcpR9lCiMB2Fic19lbmSUSwqMCWFic19z
+dGFydJRLAYwJZnJlcV90eXBllEsAjAhpbmNsX251bZSJjAtpbnZhbGlkYXRlZJRHP98CLflmt3aM
+CGxhbmd1YWdllIwGKG5vbmUplIwHbHhfbGlzdJRdlIwHbHhfcGF0aJROjAdtZXRob2RzlF2USwBh
+jAhuX3Rva2Vuc5RLZIwHcGF0dGVybpSMW1wufCx8Onw7fCF8XD98XCh8XCl8XHx8XCt8XCd8XCJ8
+4oCYfOKAmXzigJx84oCdfFwnfFzigJl84oCmfFwtfOKAk3zigJR8XCR8JnxcKnw+fDx8XC98XFt8
+XF2UjAhwb3NfdGFnc5SMCU5PVU4sVkVSQpSMB3JlbF9lbmSURz/szMzMzMzNjAlyZWxfc3RhcnSU
+Rz+5mZmZmZmajAdzd19saXN0lF2UjB5vcmFuZ2V3aWRnZXQudXRpbHMuZmlsZWRpYWxvZ3OUjApS
+ZWNlbnRQYXRolJOUKYGUfZQojAdhYnNwYXRolIwwQzovVXNlcnMvVVNFUi9EZXNrdG9wL01ML09y
+YW5nZS9Lb3JTdG9wV29yZHMudHh0lIwGcHJlZml4lE6MB3JlbHBhdGiUTowFdGl0bGWUaAiMBXNo
+ZWV0lGgIjAtmaWxlX2Zvcm1hdJROdWJhjAdzd19wYXRolGgrdYaUZXWMC19fdmVyc2lvbl9flEsD
+dS4=
+</properties>
+		<properties node_id="4" format="pickle">gASVxQAAAAAAAAB9lCiMEmNvbnRyb2xBcmVhVmlzaWJsZZSIjBNzYXZlZFdpZGdldEdlb21ldHJ5
+lENCAdnQywADAAAAAAE9AAAAhAAABMIAAALEAAABPgAAAKIAAATBAAACwwAAAAAAAAAABgAAAAE+
+AAAAogAABMEAAALDlIwOc2VsZWN0ZWRfd29yZHOUj5QojAnqsJnslYTsmpSUkIwLd29yZHNfY29s
+b3KUiIwKd29yZHNfdGlsdJRLAIwLX192ZXJzaW9uX1+USwF1Lg==
+</properties>
+		<properties node_id="5" format="literal">{'autocommit': True, 'controlAreaVisible': True, 'lilah_language': 'Slovenian', 'liu_language': 'English', 'method_idx': 2, 'multi_language': 'Korean', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02I\x00\x00\x00\xea\x00\x00\x03\xb6\x00\x00\x021\x00\x00\x02J\x00\x00\x01\x08\x00\x00\x03\xb5\x00\x00\x020\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02J\x00\x00\x01\x08\x00\x00\x03\xb5\x00\x00\x020', 'senti_language': 'English', '__version__': 1}</properties>
+		<properties node_id="6" format="literal">{'auto_commit': True, 'color_by_class': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x02\xa0\x00\x00\x00\xb1\x00\x00\x05\xc1\x00\x00\x02\xc3\x00\x00\x02\xa1\x00\x00\x00\xcf\x00\x00\x05\xc0\x00\x00\x02\xc2\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x02\xa1\x00\x00\x00\xcf\x00\x00\x05\xc0\x00\x00\x02\xc2', 'select_rows': True, 'show_attribute_labels': True, 'show_distributions': False, 'stored_selection': {'rows': [11], 'columns': [0, 1, 2]}, 'stored_sort': [], '__version__': 1}</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
